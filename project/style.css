@@ -1,0 +1,115 @@
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background: url('https://i.pinimg.com/474x/9c/bf/10/9cbf10a7b628757c05e2cc6c28beda54.jpg') no-repeat center center/cover;
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            color:white;
+        }
+
+        
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 50px;
+            background: rgba(0,0,0,0.6);
+        }
+
+        nav h1{
+            font-size:28px;
+            font-weight:800;
+            color:#ffcc00;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+
+        nav ul li{
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        nav ul li:hover{
+            color:#ffcc00;
+        }
+
+        
+        .hero{
+            flex:1;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            background:rgba(0,0,0,0.5);
+        }
+
+        .hero img{
+            width:300px;
+            margin-bottom:20px;
+            animation:float 3s ease-in-out infinite;
+        }
+
+        @keyframes float{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-15px);}
+            100%{transform:translateY(0);}
+        }
+
+        .hero h2{
+            font-size:50px;
+            font-weight:800;
+            margin-bottom:20px;
+            text-shadow:2px 2px 10px black;
+        }
+
+        .hero p{
+            font-size:18px;
+            margin-bottom:30px;
+            width:60%;
+        }
+
+        .btn{
+            padding:15px 40px;
+            font-size:20px;
+            border:none;
+            border-radius:50px;
+            background:linear-gradient(45deg,#ff512f,#f09819);
+            color:white;
+            cursor:pointer;
+            transition:0.4s;
+        }
+
+        .btn:hover{
+            transform:scale(1.1);
+            box-shadow:0 0 20px #ff9900;
+        }
+
+    
+        footer{
+            text-align:center;
+            padding:15px;
+            background:rgba(0,0,0,0.7);
+        }
+
+        @media(max-width:768px){
+            .hero h2{
+                font-size:32px;
+            }
+            .hero p{
+                width:90%;
+            }
+        }
+
+
+
